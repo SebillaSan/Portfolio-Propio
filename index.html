@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Porfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Menu encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="">Mi Portfolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Yo.png" alt="">
+            </div>
+            <h1>SEBASTIÁN MOREIRA</h1>
+            <h2>Estudiante en Producción de Videojuegos y Entretenimiento Digital.</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Saludos. Mi nombre es <span>Sebastián Moreira</span>. Tengo 23 años y me encuentro cursando la carrera de Produccion de Videojuegos y Entretenimiento Digital en la UNRaf (Universidad Nacional de Rafaela).
+                Trabajo como cajero en un kiosco de la ciudad de Sunchales, donde resido. Entre mis principales intereses puedo destacar la música, el baile y la moda. Tambien tengo pasión por los videojuegos aunque últimamente esta se vio deteriorada por el poco tiempo del que dispongo para poder disfrutarlos.
+                Mis espectativas luego de recibirme en la carrera que actualmente curso, es la de ser un "Game Designer" o musico, esto último lo veo mas complicado.
+                Algunos artistas que respeto y admiro son:
+                - Toby Fox (Músico del videojuego Undertale).
+                - Jeon Jungkook (Artista Coreano, que destaca por sus habilidades en canto y baile).
+                - Hidetaka Miyazaki (Director de la saga de videojuegos Dark Souls, entre otros titulos famosos de FromSoftware).</p>
+             <div class="fila">
+               <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento:</strong>
+                            09-05-2000.
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +54 9 3493-515072.
+                        </li>
+                        <li>
+                            <strong>E-mail:</strong>
+                            sebaa.moreira@hotmail.com.
+                        </li>
+                        <li>
+                            <strong>Domicilio:</strong>
+                            José Pedroni 377 - Sunchales - Santa Fé.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                      <h3>Intereses:</h3>
+                      <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>                  
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>               
+                        <div class="interes">
+                            <i class="fa-solid fa-shirt"></i>
+                            <span>MODA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- Seccion Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Habilidades Técnicas:</h3>
+                    <div class="skill">
+                        <span>Edición de Videos</span>
+                        <div class="barra-skill">
+                            <div class="progreso EdiciondeVideos">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Inglés</span>
+                        <div class="barra-skill">
+                            <div class="progreso Ingles">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paquete Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso Microsoft">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Otras habilidades y experiencias:</h3>
+                    <div class="skill">
+                        <span>Seguros</span>
+                        <div class="barra-skill">
+                            <div class="progreso Seguros">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Atención al Cliente</span>
+                        <div class="barra-skill">
+                            <div class="progreso Atencion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manejo de Redes</span>
+                        <div class="barra-skill">
+                            <div class="progreso Redes">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>    
+
+    <script> src="script.js"</script>
+</body>
+</html>
